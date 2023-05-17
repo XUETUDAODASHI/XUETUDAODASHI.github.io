@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Hello World, Hexo">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="description" content="2Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using He">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -361,12 +361,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/1/">
+                                <span class="chip bg-color">1</span>
+                            </a>
+                        
+                            <a href="/tags/2/">
+                                <span class="chip bg-color">2</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/111/" class="post-category">
+                                111
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -396,7 +413,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+                <p>2Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -409,6 +426,8 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">haveConflict</span><span class="params">(String[] event1, String[] event2)</span> &#123;</span><br><span class="line">     <span class="type">int</span> a=Integer.parseInt(event1[<span class="number">0</span>].substring(<span class="number">0</span>,<span class="number">2</span>))*<span class="number">60</span>+Integer.parseInt(event1[<span class="number">0</span>].substring(<span class="number">3</span>,<span class="number">5</span>));</span><br><span class="line">    <span class="type">int</span> b=Integer.parseInt(event1[<span class="number">1</span>].substring(<span class="number">0</span>,<span class="number">2</span>))*<span class="number">60</span>+Integer.parseInt(event1[<span class="number">1</span>].substring(<span class="number">3</span>,<span class="number">5</span>));</span><br><span class="line">    <span class="type">int</span> c=Integer.parseInt(event2[<span class="number">0</span>].substring(<span class="number">0</span>,<span class="number">2</span>))*<span class="number">60</span>+Integer.parseInt(event2[<span class="number">0</span>].substring(<span class="number">3</span>,<span class="number">5</span>));</span><br><span class="line">    <span class="type">int</span> d=Integer.parseInt(event2[<span class="number">1</span>].substring(<span class="number">0</span>,<span class="number">2</span>))*<span class="number">60</span>+Integer.parseInt(event2[<span class="number">1</span>].substring(<span class="number">3</span>,<span class="number">5</span>));</span><br><span class="line">    <span class="keyword">if</span>(b&lt;c||d&lt;a) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
                 
             </div>
@@ -472,7 +491,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/1/">
+                                    <span class="chip bg-color">1</span>
+                                </a>
+                            
+                                <a href="/tags/2/">
+                                    <span class="chip bg-color">2</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -575,13 +602,29 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/111/" class="post-category">
+                                    111
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/1/">
+                        <span class="chip bg-color">1</span>
+                    </a>
+                    
+                    <a href="/tags/2/">
+                        <span class="chip bg-color">2</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -613,13 +656,29 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/111/" class="post-category">
+                                    111
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/1/">
+                        <span class="chip bg-color">1</span>
+                    </a>
+                    
+                    <a href="/tags/2/">
+                        <span class="chip bg-color">2</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
